@@ -1,0 +1,12 @@
+com/tictactoe/config/ResourceServerConfig.class
+com/tictactoe/model/Move.class
+com/tictactoe/repository/JdbcBoardStateRepository.class
+com/tictactoe/repository/BoardStateRepository.class
+com/tictactoe/model/BoardState.class
+com/tictactoe/config/TokenProcessingFilter.class
+com/tictactoe/model/Player.class
+com/tictactoe/model/BoardOptions.class
+com/tictactoe/ServletInitializer.class
+com/tictactoe/service/AI.class
+com/tictactoe/controller/MoveController.class
+com/tictactoe/TictactoeApplication.class

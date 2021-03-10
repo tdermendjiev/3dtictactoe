@@ -1,0 +1,13 @@
+main {
+    display:inline;
+}
+
+.dimension {
+    display: grid;
+    grid-gap: 0px;
+}
+
+app-square {
+    border: 1px gray solid;
+    height: 100px;
+}

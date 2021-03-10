@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "http://3dtictac-dev.eu-central-1.elasticbeanstalk.com",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

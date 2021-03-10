@@ -1,0 +1,12 @@
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/config/ResourceServerConfig.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/repository/JdbcBoardStateRepository.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/model/BoardOptions.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/model/Move.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/service/AI.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/model/BoardState.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/repository/BoardStateRepository.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/config/TokenProcessingFilter.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/controller/MoveController.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/model/Player.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/ServletInitializer.java
+/Users/teodordermendzhiev/workspace/3dtictac/src/main/java/com/tictactoe/TictactoeApplication.java

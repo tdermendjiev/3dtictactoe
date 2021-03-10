@@ -1,0 +1,64 @@
+<h1>Current Player: {{ player }} </h1>
+
+<button nbButton outline status="danger"  data-toggle="modal" data-target="#exampleModal">Start new Game</button>
+
+<button class="btn btn-warning" (click)="logout()">
+    Logout
+  </button>
+<h2 *ngIf="isGameOver && winner !== 0">
+    Player {{winner}} won the game!
+</h2>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+            <div *ngFor="let type of gameTypes; let i = index;" class="form-check">
+                <input class="form-check-input" type="radio" value={{type.length}}
+                    [(ngModel)]="gameTypes[i].length"  value={{i}}
+                    (change)="onLengthChange($event.target.value, i)"/>
+                <label class="form-check-label" style="color: black;" for="flexRadioDefault1">
+                  {{type.label}}
+                </label>
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="newGame()">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<main>
+    <div *ngFor="let b of boards; let i = index">
+        <div class="row">
+            <div class="dimension col-md-12 offset-md-2" [ngStyle]="{'grid-template-columns': gridColumns}">
+                <app-square
+                *ngFor="let val of boards[i]; let u = index"
+                [value]="val"
+                (click)="makeMove(i, u)">
+
+                </app-square>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+</main>
+
+
+
+
+
