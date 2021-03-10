@@ -9,7 +9,7 @@ export class AuthService {
 
   authConfig: AuthConfig = {
     issuer: 'http://46.101.183.89:8080/auth/realms/tictactoe',
-    redirectUri: window.location.origin + "/",
+    redirectUri: window.location.origin + "/board",
     clientId: 'tictactoe-fe',
     requestAccessToken: true,
     scope: 'openid profile email offline_access',

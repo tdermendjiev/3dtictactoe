@@ -40,20 +40,26 @@ export class BoardComponent implements OnInit {
   constructor(private authService: AuthService, private apiService: ApiService, private router: Router) {}
 
   ngOnInit() {
-    const sub = this.apiService.getCurrent().subscribe((result) => {
-      if(result && result.grid){
-        this.boardState = new BoardState(result);
-        const squares = this.convertSquares(result.grid);
-        this.boards = squares;
-        this.updateGridStyle(result.length)
-      }
+    var that = this;
 
-    }, error => {
-      this.catchError(error);
+    setTimeout(function(){//workaround login issue
 
-    });
+      const sub = that.apiService.getCurrent().subscribe((result) => {
+        if(result && result.grid){
+          that.boardState = new BoardState(result);
+          const squares = that.convertSquares(result.grid);
+          that.boards = squares;
+          that.updateGridStyle(result.length)
+        }
 
-    this.subscription.add(sub);
+      }, error => {
+        this.catchError(error);
+
+      });
+
+      that.subscription.add(sub);
+     }, 2000);
+
   }
 
   async logout() {

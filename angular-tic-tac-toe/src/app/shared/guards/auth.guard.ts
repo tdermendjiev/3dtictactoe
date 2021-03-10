@@ -20,7 +20,6 @@ canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean 
         this.router.navigate(['/login']);
         resolve(false);
       } else {
-          console.log("DA")
         resolve(true);
       }
     });
